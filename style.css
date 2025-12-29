@@ -1,0 +1,81 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --green:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --grey700:hsl(0, 0%, 20%);
+    --grey800:hsl(0, 0%, 12%);
+    --grey900:hsl(0, 0%, 8%);
+
+}
+body{
+    margin:0;
+    padding:0;
+
+    font-size: 0.8rem;
+    background-color: var(--grey900);
+    color:var(--white);
+    font-family: "Inter", sans-serif;
+   
+}
+
+
+img{
+    max-width: 100%;
+    border-radius: 1000px;
+    margin-block: 1rem;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-block: 0.3rem;
+}
+h2{
+    font-size: 0.8rem;
+    color:var(--green);
+    margin:0;
+}
+p{
+    margin-block: 1.5rem;
+}
+
+input{
+    padding:0.8rem 3rem;
+    background-color: var(--grey700);
+    color: white;
+    margin-block: 0.5rem;
+    border-radius: 10px;  
+    border: 0;
+}
+
+::placeholder{
+    color:var(--white);
+    text-align: center;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow:column nowrap;
+    background-color: var(--grey800);
+    padding:1.5rem;
+
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
