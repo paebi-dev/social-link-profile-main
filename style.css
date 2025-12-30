@@ -26,6 +26,7 @@ img{
     max-width: 100%;
     border-radius: 1000px;
     margin-block: 1rem;
+    border:1px solid red;
 }
 
 h1{
@@ -41,18 +42,13 @@ p{
     margin-block: 1.5rem;
 }
 
-input{
-    padding:0.8rem 3rem;
+input[type='button']{
+    padding:0.9rem 5rem;
     background-color: var(--grey700);
     color: white;
     margin-block: 0.5rem;
     border-radius: 10px;  
     border: 0;
-}
-
-::placeholder{
-    color:var(--white);
-    text-align: center;
 }
 
 .wrapper{
@@ -70,7 +66,7 @@ input{
 
     flex-flow:column nowrap;
     background-color: var(--grey800);
-    padding:1.5rem;
+    padding:2rem;
 
     border-radius: 20px;
 }
